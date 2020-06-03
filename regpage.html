@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+    <title>
+        Registeration Page
+    </title>
+    </head>
+    <style>
+       h1{border: slateblue; color: black; background: chartreuse; border-right: 5pc;}
+    </style>
+    <body style="background-color:olivedrab; border: ;"> 
+        <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif;"> Vamos!</h1>
+        <hr>
+        
+    <form action="user-credentials">
+        <label for="name">Name: </label> <br>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name"> 
+        <br>
+        <br>
+        
+    
+        <label for="DOB">Date of Birth: </label>    <br>
+
+        <input placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="date"> <br>
+        <br> 
+            
+      
+    Gender: <br>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label>
+       <br><br>
+
+        
+            <label for="email">Email-ID</label> <br>
+            <input type="text" placeholder="Email-ID:">
+         <br><br>
+
+        <form action="submit-phone-no">
+            <label for="phone-no">Mobile Number</label> <br>
+            <input type="text" name="text" id="phone-no" placeholder="Enter Mobile Number" > <br><br>
+
+        
+
+    <label for="pwd">Password:</label> <br>
+ <input type="password" name="pwd" id="pwd" placeholder="Create Password">
+<br> <br>
+
+
+    <label for="confirm-password">Confirm Password: </label> <br>
+    <input type="password" name="" id="confirm-password" placeholder="Confirm Password"><br><br>
+ <button type="submit">Submit</button>
+
+    </form> <br><br>
+   Already Registered? <a href="login-page.html">Login.</a>
+    </body>
+</html>    
