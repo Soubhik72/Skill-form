@@ -1,3 +1,5 @@
 # Skill-form
-![101553200_3190068781044594_3761769203808337920_n](https://user-images.githubusercontent.com/58504563/83774008-d663d100-a6a2-11ea-9833-bb45c2eec208.jpg)
-![84101213_3190069097711229_4602728670858051584_n](https://user-images.githubusercontent.com/58504563/83774017-d794fe00-a6a2-11ea-9c81-ee65a21f6ae4.jpg)
+![Screenshot (11)](https://user-images.githubusercontent.com/58504563/83777397-fdbc9d00-a6a6-11ea-8c90-98b1b9cb2625.png)
+![Screenshot (10)](https://user-images.githubusercontent.com/58504563/83777404-ff866080-a6a6-11ea-9bcf-c9f298a85a2f.png)
+
+
