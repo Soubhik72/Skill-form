@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+    <head> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>
+        Registeration Page
+    </title>
+    </head>
+    <style>
+      body{
+          color: white;
+      }
+   .grey {
+       color: black;
+   }
+      h1{
+          text-align: center;
+      }
+           border-radius: 10px;
+           border-color: blue;
+           margin-right: 76pc;
+       }
+    </style>
+    <body style="background-color:olivedrab; background: url(https://lh3.googleusercontent.com/AHkNnZu4yKszAR6zIH6xgFJwXPKoBvxjk5xmHrJJ0CHCyFGNg6pKzj-Rz9SlvYI7V6W5ILufr86BSmpDEm8WxGx3inNHWEZ9NHwyxdW2btxungwKC5ZrjOCrlswubbY2bLShnZttgg=w1236-h825-no); background-size: 100% 100%; "> 
+        <h1 class="grey" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> Vamos!</h1>
+        <hr>
+        
+    <form id="sh" action="user-credentials">
+        <label for="name">Name: </label> <br>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name"> 
+        <br>
+        <br>
+        
+    
+        <label for="DOB">Date of Birth: </label>    <br>
+
+        <input placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="date"> <br>
+        <br> 
+            
+      
+    Gender: <br>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label>
+       <br><br>
+
+        
+            <label for="email">Email-ID</label> <br>
+            <input type="text" placeholder="Email-ID:">
+         <br><br>
+
+        <form action="submit-phone-no">
+            <label for="phone-no">Mobile Number</label> <br>
+            <div class="form-row">
+            <div class="input-group-text">+91</div>
+            <input type="text" name="text" id="phone-no" placeholder="Enter Mobile Number" ></div> <br><br>
+
+        
+
+    <label for="pwd">Password:</label> <br>
+ <input type="password" name="pwd" id="pwd" placeholder="Create Password">
+<br> <br>
+
+
+    <label for="confirm-password">Confirm Password: </label> <br>
+    <input type="password" name="" id="confirm-password" placeholder="Confirm Password"><br><br>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </div>
+
+    </form> <br><br>
+   Already Registered? <a href="bootstrap-login.html">Login.</a>
+    </body>
+</html>    
