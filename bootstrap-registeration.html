@@ -8,6 +8,9 @@
     <style>
       body{
           color: white;
+          display: flex;
+         align-items: center;
+         flex-direction: column;
       }
    .grey {
        color: black;
@@ -26,52 +29,62 @@
         
     <form id="sh" action="user-credentials">
         <label for="name">Name: </label> <br>
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name"> 
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required> 
         <br>
         <br>
         
     
         <label for="DOB">Date of Birth: </label>    <br>
 
-        <input placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="date"> <br>
+        <input placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="date" required> <br>
         <br> 
-            
+     
       
     Gender: <br>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label>
-<input type="radio" id="female" name="gender" value="female">
-<label for="female">Female</label>
-<input type="radio" id="other" name="gender" value="other">
-<label for="other">Other</label>
+    <div class="form-check">
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label></div>
+          <div class="form-check">
+<input type="radio" id="female" name="gender" value="female" required>
+<label for="female">Female</label></div>
+<div class="form-check">
+<input type="radio" id="other" name="gender" value="other" required>
+<label for="other">Other</label></div>
+</div>
        <br><br>
 
         
-            <label for="email">Email-ID</label> <br>
-            <input type="text" placeholder="Email-ID:">
+            <label for="email">Email-ID:</label> <br>
+            <input type="text" placeholder="Email-ID" required>
          <br><br>
 
         <form action="submit-phone-no">
-            <label for="phone-no">Mobile Number</label> <br>
+            <label for="phone-no">Mobile Number:</label> <br>
             <div class="form-row">
             <div class="input-group-text">+91</div>
-            <input type="text" name="text" id="phone-no" placeholder="Enter Mobile Number" ></div> <br><br>
+            <input type="text" name="text" id="phone-no" placeholder="Enter Mobile Number"></div> <br><br>
 
         
-
+<div class="col-auto" style="display: flex; flex-direction: column;"
     <label for="pwd">Password:</label> <br>
- <input type="password" name="pwd" id="pwd" placeholder="Create Password">
-<br> <br>
+ <input type="password" name="pwd" id="pwd" placeholder="Create Password:" required>
+ <small style="color: white;" class="text-muted"> (minimum 8 letters and must contain symbols)</small>
+<br> <br> </div>
 
-
-    <label for="confirm-password">Confirm Password: </label> <br>
-    <input type="password" name="" id="confirm-password" placeholder="Confirm Password"><br><br>
+<div class="col-auto" style="display: flex; flex-direction: column; justify-self: flex-start;">
+    <label for="confirm-password">Confirm Password: </label> 
+    <input type="password" name="" id="confirm-password" placeholder="Confirm Password" required>
+</div>
+<br><br>
     <div class="col-auto">
       <button type="submit" class="btn btn-primary mb-2">Submit</button>
     </div>
 
     </form> <br><br>
-   Already Registered? <a href="bootstrap-login.html">Login.</a>
+    <div style="display: flex; justify-items: flex-start;">
+    Already registered?
+    <a href="bootstrap-login.html">Login.</a>
+</div>
     </body>
 </html>    

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <style>
     h2{ text-align: center;}
+    .disp {
+        display: flex;
+        flex-direction: column;
+        align-items:center  ;
+    }
+    }
     .border{
            border-radius: 10px;
            border-color: blue;
@@ -11,16 +17,21 @@
     <title> Login - Vamos!</title>
 </head> <br> 
 <h2 style="color: black; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; "> Registered Users</h2> <hr>
-<body style="color: blanchedalmond;background: url(https://lh3.googleusercontent.com/AHkNnZu4yKszAR6zIH6xgFJwXPKoBvxjk5xmHrJJ0CHCyFGNg6pKzj-Rz9SlvYI7V6W5ILufr86BSmpDEm8WxGx3inNHWEZ9NHwyxdW2btxungwKC5ZrjOCrlswubbY2bLShnZttgg=w1236-h825-no); background-size:auto; ">
-    <form action="submit-credentials">
-        <label for="email">Email-ID:</label> <br>
-        <input type="text" id="email" placeholder="Email-ID"> <br><br>
-        <label for="password">Password:</label> <br>
-        <input type="password" id="password" placeholder="Enter Password">
-    <br><br>
-    <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
-      </div>
-    </form> <br><br>
-    Not Registered? <a href="bootstrap-registeration.html">Sign Up!</a>
+<body class="disp" style="color: white;background: url(https://lh3.googleusercontent.com/AHkNnZu4yKszAR6zIH6xgFJwXPKoBvxjk5xmHrJJ0CHCyFGNg6pKzj-Rz9SlvYI7V6W5ILufr86BSmpDEm8WxGx3inNHWEZ9NHwyxdW2btxungwKC5ZrjOCrlswubbY2bLShnZttgg=w1236-h825-no); background-size:auto; ">
+    <form>
+        <div class="col-10" >
+          <label for="exampleInputEmail1">Email address:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email ID">
+          
+        </div>
+        <div class="col-10">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="Password">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your password with anyone else.</small>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div style="display: flex; justify-content: stretch;">
+    Not Registered? <a href="bootstrap-registeration.html">Sign Up!</a> </div>
 </body>
